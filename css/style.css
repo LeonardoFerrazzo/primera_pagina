@@ -1,0 +1,173 @@
+*{
+    color:#FFF;
+    box-sizing: border-box;
+}
+
+header{
+    /*background-color: rgb(83, 212, 212);*/
+    /*vertical-align: super;*/
+    margin:0;
+}
+
+img{ /*El parametro imagen como tal*/
+    width: 100%;
+}
+
+body{
+    background-color: #084c8d;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:0; /*Con este margin me evito los margenes*/
+    width: 100vw;
+}
+
+h1{
+    text-align: center; 
+    font-family: 'Exo 2', sans-serif; 
+    font-weight: 300; 
+    margin: 0% 0%; 
+    font-size:7vw;
+    padding-top: 10%;
+    padding-bottom: 25%;
+}
+
+h2{
+    text-align: left;
+    padding-left: 2vw;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: x-large;
+}
+
+main{
+    margin:0;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+div nav a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Anybody', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFF;
+    padding: .5%;
+    margin: .5%;
+    font-size: 1vw;
+}
+
+nav a:hover{/*Este es para que se cambie de color el link al pasar cursor*/
+    background-color: #084c8d;
+    padding: .5%;
+    margin: .5%;
+}
+
+div nav{
+    width: 30vw;
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    padding: 15px 5px 15px 5px;
+    border-radius: 2px 15px 2px 15px;
+}
+
+div nav span{
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+}
+
+#barra{
+    font-size: larger;
+}
+
+nav{
+    text-align: center;
+}
+
+.s1{
+    text-align: center;
+    margin: auto;
+    border: 5px;
+    border-color: rgb(30, 154, 226);
+    border-style:solid none solid none;
+    text-decoration: none;
+    font-size: xx-large;
+    text-size-adjust: auto;
+    background-color: black;
+}
+
+.encabezado{ /*clase*/
+    font-weight: bolder;
+    color:#FFF;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.list1{
+    text-align: left;
+}
+
+.tcentrada{
+    margin:auto;
+    font-size:medium;
+    text-size-adjust: auto;
+}
+
+#main_p{ /*id*/
+    background-image: url("/imagenes/wallpaper2.jpg");
+    background-size:cover;
+    width:100%;
+    height:1080px; /*Buscarle la vuelta para que sea responsive*/
+    padding: 0;
+    border-color: darkblue;
+    border-width: 100vh;
+}
+
+/*#bg_main{
+    transition: width 10s
+}
+
+bg_main:hover{
+    width:120%;
+}*/
+
+.container{
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.image{
+    padding: 2vw 2vh;
+}
+
+
+.text_1{
+    font-size: large;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.text{
+    font-size: large;
+    text-align: justify;
+    padding: 2vw;
+}
+
+.image{
+    margin:auto;
+    padding: auto;
+    height: auto;
+    overflow: auto;
+}
+
+#tabla{
+    margin: 2vw;
+    padding-top: 1vw;
+}
