@@ -11,7 +11,7 @@ header{
     margin:0;
 }
 
-img{ /*El parametro imagen como tal*/
+img{ /*El parámetro imagen como tal*/
     width: 100%;
     border: #FFF solid;
     border-width: 3px;
@@ -64,32 +64,33 @@ div nav a{
     padding: .5%;
     margin: .5%;
     font-size: 2vw;
+    font-weight: 500;
 }
 
 nav a:hover{/*Este es para que se cambie de color el link al pasar cursor*/
     background-color: #084c8d;
     color: red;
-    padding: .5%;
-    margin: .5%;
+    padding:0;
+    margin:0;
 }
 
 div nav{
     display: flex;
-    width: 30vw;
-    background-color: rgb(255, 255, 255);
+    /*width: 30vw;*/
+    background-color: rgba(255, 255, 255, 0.651);
     margin:auto;
-    padding: 15;
-    border-radius: 2px 15px 2px 15px;
+    /*padding: 15;*/
+    border-radius: 7.5px 15px;
     border-width: thick;
     width: fit-content;
 }
 
 div nav span{
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(4, 63, 97, 0.918);
     margin: 10px;
-    padding: 10px 5px 10px 5px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 5px 10px;
 }
 
 .s1{
@@ -136,16 +137,7 @@ footer{
     border-width: 100vh;
     overflow-x: auto;
     background-attachment: fixed;
-    /*Buscar para que se mantenga centrada en el resizing*/
 }
-
-/*#bg_main{
-    transition: width 10s
-}
-
-bg_main:hover{
-    width:120%;
-}*/
 
 .container{
     box-sizing: border-box;
@@ -180,4 +172,5 @@ bg_main:hover{
 #tabla{
     margin: 2vw;
     padding-top: 1vw;
+    max-width: 100%;
 }
