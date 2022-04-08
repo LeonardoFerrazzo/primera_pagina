@@ -2,6 +2,7 @@
     color:#FFF;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 
 header{
