@@ -1,6 +1,7 @@
 *{
     color:#FFF;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -11,6 +12,13 @@ header{
 
 img{ /*El parametro imagen como tal*/
     width: 100%;
+    border: #FFF solid;
+    border-width: 3px;
+    border-radius: 10px;
+}
+
+iframe{
+    margin-top: 10;
 }
 
 body{
@@ -54,36 +62,33 @@ div nav a{
     color: #FFF;
     padding: .5%;
     margin: .5%;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 nav a:hover{/*Este es para que se cambie de color el link al pasar cursor*/
     background-color: #084c8d;
+    color: red;
     padding: .5%;
     margin: .5%;
 }
 
 div nav{
+    display: flex;
     width: 30vw;
     background-color: rgb(255, 255, 255);
     margin:auto;
-    padding: 15px 5px 15px 5px;
+    padding: 15;
     border-radius: 2px 15px 2px 15px;
+    border-width: thick;
+    width: fit-content;
 }
 
 div nav span{
+    display: flex;
     background-color: rgb(0, 0, 0);
     margin: 10px;
     padding: 10px 5px 10px 5px;
     border-radius: 5px;
-}
-
-#barra{
-    font-size: larger;
-}
-
-nav{
-    text-align: center;
 }
 
 .s1{
@@ -122,11 +127,15 @@ footer{
 #main_p{ /*id*/
     background-image: url("/imagenes/wallpaper2.jpg");
     background-size:cover;
+    background-position: center;
     width:100%;
-    height:1080px; /*Buscarle la vuelta para que sea responsive*/
+    height:100vh; /*100 del viewport*/
     padding: 0;
     border-color: darkblue;
     border-width: 100vh;
+    overflow-x: auto;
+    background-attachment: fixed;
+    /*Buscar para que se mantenga centrada en el resizing*/
 }
 
 /*#bg_main{
