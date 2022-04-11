@@ -5,6 +5,87 @@
     max-width: 100%;
 }
 
+
+[class*="col-"] { /*Para todas las columnas que defino*/
+    float: left; 
+    padding: 15px;
+  }
+/*Para desktop*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    .col-4{
+        width:50%
+    }
+    .social_sticky{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .col-4{
+        width:100%;
+    }
+    .social_sticky{
+        display: none;
+    }    
+}
+
+.social_sticky{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.social_sticky a {
+    display: block; /*Muestra en bloque*/
+    text-align: center;
+    padding: 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    font-size: 1vw;
+    border: #ffffff;
+    border-style: groove;
+    border-radius: 0 20px 20px 0;
+}
+
+.social_sticky a:hover {
+    background-color: #084c8d;
+}
+
+.fb {
+    background-color: black;
+    color:black;
+}
+  
+.tw {
+    background-color: black;
+    color: black;
+}
+  
+.ig {
+    background-color: black;
+    color: black;
+}
+  
+.lk {
+    background-color: black;
+    color: black;
+}
+
 header{
     /*background-color: rgb(83, 212, 212);*/
     /*vertical-align: super;*/
@@ -16,10 +97,6 @@ img{ /*El parámetro imagen como tal*/
     border: #FFF solid;
     border-width: 3px;
     border-radius: 10px;
-}
-
-iframe{
-    margin-top: 10;
 }
 
 body{
@@ -61,14 +138,11 @@ div nav a{
     font-family: 'Anybody', cursive;
     font-family: 'Roboto Condensed', sans-serif;
     color: #FFF;
-    padding: .5%;
-    margin: .5%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-weight: 500;
 }
 
 nav a:hover{/*Este es para que se cambie de color el link al pasar cursor*/
-    background-color: #084c8d;
     color: red;
     padding:0;
     margin:0;
@@ -76,13 +150,13 @@ nav a:hover{/*Este es para que se cambie de color el link al pasar cursor*/
 
 div nav{
     display: flex;
-    /*width: 30vw;*/
     background-color: rgba(255, 255, 255, 0.651);
     margin:auto;
-    /*padding: 15;*/
     border-radius: 7.5px 15px;
     border-width: thick;
     width: fit-content;
+    position: sticky;
+    top:0;
 }
 
 div nav span{
@@ -103,6 +177,11 @@ div nav span{
     font-size: xx-large;
     text-size-adjust: auto;
     background-color: black;
+}
+
+.barra{
+    position: sticky;
+    top:0
 }
 
 .encabezado{ /*clase*/
@@ -167,6 +246,20 @@ footer{
     padding: auto;
     height: auto;
     overflow: auto;
+}
+
+.row{
+    margin: 2%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.vid{
+    margin: 1%;
 }
 
 #tabla{
