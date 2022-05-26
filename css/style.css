@@ -39,6 +39,9 @@
     .social_sticky{
         display: none;
     }
+    /* .barra{
+        display: none;
+    } */
 }
 
 @media only screen and (max-width: 600px) {
@@ -198,6 +201,7 @@ div nav span{ /*Tocar este*/
     position: fixed;
     top:0%;
     align-self: center;
+    z-index: 10;
 }
 
 .encabezado{ /*clase*/
@@ -396,6 +400,7 @@ tr:nth-child(even){
     padding: 0px;
     border-radius: 15px;
     border: rgb(255, 255, 255) solid;
+    max-width: 90vw;
 }
 
 .derecho{
@@ -406,6 +411,7 @@ tr:nth-child(even){
     border-radius: 15px;
     border: rgb(255, 255, 255) solid;
     text-align: justify;
+    max-width: 90vw;
 }
 
 .derecho:hover{
@@ -446,6 +452,8 @@ tr:nth-child(even){
     border-radius: 15px;
     border: rgb(255, 255, 255) solid;
     text-align: justify;
+    z-index: 1;
+    max-width: 90vw;
 }
 
 .derecho_var{
@@ -456,6 +464,7 @@ tr:nth-child(even){
     padding: 0px;
     border-radius: 15px;
     border: rgb(255, 255, 255) solid;
+    max-width: 90vw;
 }
 
 .derecho_var:hover{
@@ -612,6 +621,7 @@ h1:hover{
     margin: 20px auto 20px auto;
     border-radius: 10px;
     border:#FFF solid;
+    max-width: 90vw;
 }
 
 .locacion h2{
