@@ -198,6 +198,7 @@ div nav span{ /*Tocar este*/
     position: fixed;
     top:0%;
     align-self: center;
+    z-index: 1;
 }
 
 .encabezado{ /*clase*/
