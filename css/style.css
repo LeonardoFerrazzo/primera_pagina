@@ -9,6 +9,8 @@
 [class*="col-"] { /*Para todas las columnas que defino*/
     float: left; 
     padding: 15px;
+    border: 15px;
+    background-color: rgba(0, 0, 0);
   }
 /*Para desktop*/
 .col-1 {width: 8.33%;}
@@ -24,7 +26,13 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px){
+    .social_sticky{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .col-4{
         width:50%
     }
@@ -39,7 +47,10 @@
     }
     .social_sticky{
         display: none;
-    }    
+    } 
+    h1{
+        display: none; /*Muestra en navbar*/
+    }
 }
 
 .social_sticky{
@@ -110,15 +121,14 @@ h1{
     text-align: center; 
     font-family: 'Exo 2', sans-serif; 
     font-weight: 300; 
-    margin: 0% 0%; 
-    font-size:7vw;
+    margin: 0; 
+    font-size:7em;
     padding-top: 10%;
     padding-bottom: 25%;
 }
 
 h2{
     text-align: left;
-    padding-left: 2vw;
     margin: 0;
     text-decoration: underline;
     text-decoration-color: rgb(255, 255, 255);
@@ -138,33 +148,38 @@ div nav a{
     font-family: 'Anybody', cursive;
     font-family: 'Roboto Condensed', sans-serif;
     color: #FFF;
-    font-size: 2.5vw;
-    font-weight: 500;
+    font-size: xx-large;
+    font-weight: 1000;
+    text-size-adjust: auto;
+    width: 100%;
 }
 
+/*TOCAR TODO LO QUE SEA NAV*/
+
 nav a:hover{/*Este es para que se cambie de color el link al pasar cursor*/
-    color: red;
+    color: rgb(255, 0, 0);
     padding:0;
     margin:0;
 }
 
-div nav{
+div nav{ /*Tocar este*/
     display: flex;
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: rgba(0, 0, 0,0.5);
     margin:auto;
-    border-radius: 7.5px 15px;
+    border-radius: 0px 0px 15px 15px;
     border-width: thick;
-    width: fit-content;
+    width: 100vw; 
     position: sticky;
     top:0;
 }
 
-div nav span{
+div nav span{ /*Tocar este*/
     display: flex;
-    background-color: rgba(4, 63, 97, 0.918);
+    background-color: rgb(30, 154, 226,0.9);
     margin: 10px;
     padding: 5px;
     border-radius: 5px 10px;
+    width: 100vw;
 }
 
 .s1{
@@ -180,8 +195,9 @@ div nav span{
 }
 
 .barra{
-    position: sticky;
-    top:0
+    position: fixed;
+    top:0%;
+    align-self: center;
 }
 
 .encabezado{ /*clase*/
@@ -199,10 +215,32 @@ footer{
     text-align: left;
 }
 
-.tcentrada{
+/*.tcentrada{
     margin:auto;
     font-size:medium;
     text-size-adjust: auto;
+}*/
+
+table{
+    width: 100%;
+    background-color: #084c8d;
+    border-collapse: collapse;
+    text-align: center;
+    border: #FFF solid 2px;
+    filter: sepia(80%);
+}
+
+th, td{
+    padding: 10px;
+}
+
+thead{
+    background-color: #000000;
+    border-bottom: solid 5px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(0, 0, 0);
 }
 
 #main_p{ /*id*/
@@ -248,14 +286,12 @@ footer{
     overflow: auto;
 }
 
-.row{
-    margin: 2%;
-}
 
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
+    margin: 2%;
 }
 
 .vid{
@@ -263,7 +299,336 @@ footer{
 }
 
 #tabla{
-    margin: 2vw;
+    /*margin: 2vw;
     padding-top: 1vw;
-    max-width: 100%;
+    max-width: 100%;*/
+    margin: 15px auto;
+    width:600px
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    background: black;
+    width: 400px;
+    margin: 15px;
+    border-radius: 15px;
+    border: #FFF solid;
+    border-width: 0.2em;
+    filter: sepia(80%);
+}
+
+.tarjeta-img{
+    height: 350px;
+    margin-bottom: 15px;
+    background-size:cover;
+    border-radius: 15px 15px 0 0;
+    border-bottom: #FFF solid;
+    border-width: 0.5em;
+}
+
+.car-1{
+    background-image: url("/imagenes/Cards/Launch.jpg");
+}
+
+.car-2{
+    background-image: url("/imagenes/Cards/Maintenance.jpg");
+}
+
+.car-3{
+    background-image: url("/imagenes/Cards/Satellite.jpeg");
+}
+
+.car-4{
+    background-image: url("/imagenes/Cards/Satellite-Imagery.jpg");
+}
+
+.tarjeta p{
+    padding: 10px;
+    text-align: justify;
+    text-decoration:double;
+}
+
+.tarjeta h3{
+    padding: 10px;
+}
+
+.tarjeta a{
+    background-color: rgb(30, 154, 226);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align:center;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+.col-4{
+    border-radius: 0px;
+    border: rgb(255, 255, 255) solid;
+    border-width: 0.2em; 
+}
+
+.tarjeta:hover{
+    background-color: #000000;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+    filter: sepia(0%);
+}
+
+.sider{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+}
+
+.izquierdo{
+    background: black;
+    width: 850px;
+    height: auto;
+    margin:0px;
+    padding: 0px;
+    border-radius: 15px;
+    border: rgb(255, 255, 255) solid;
+}
+
+.derecho{
+    background: black;
+    width: 850px;
+    padding: 40px;
+    margin:0px;
+    border-radius: 15px;
+    border: rgb(255, 255, 255) solid;
+    text-align: justify;
+}
+
+.derecho:hover{
+    transform: scale(1.03);
+    transition: all 1s ease;
+    background-color: rgb(30, 154, 226);
+}
+
+.izquierdo:hover{
+    transform: scale(1.03);
+    transition: all 1s ease;
+    background-color: rgb(30, 154, 226);
+}
+
+.img_sider{
+    height: 350px;
+    background-size:cover;
+    border-width: 0.5em;
+}
+
+.is1{
+    background-image: url("/imagenes/rl.jpg");
+    filter: sepia(80%);
+    border-radius: 15px;
+}
+.is1:hover{
+    transition: all 1s ease;
+    filter: sepia(0%);
+}
+
+
+
+.izquierdo_var{
+    background: black;
+    width: 850px;
+    padding: 40px;
+    margin:0px;
+    border-radius: 15px;
+    border: rgb(255, 255, 255) solid;
+    text-align: justify;
+}
+
+.derecho_var{
+    background: black;
+    width: 850px;
+    height: auto;
+    margin:0px;
+    padding: 0px;
+    border-radius: 15px;
+    border: rgb(255, 255, 255) solid;
+}
+
+.derecho_var:hover{
+    transform: scale(1.03);
+    transition: all 1s ease;
+    background-color: rgb(30, 154, 226);
+}
+
+.izquierdo_var:hover{
+    transform: scale(1.03);
+    transition: all 1s ease;
+    background-color: rgb(30, 154, 226);
+}
+
+.is2{
+    background-image: url("/imagenes/manufactura.jpg");
+    filter: sepia(80%);
+    border-radius: 15px;
+}
+.is2:hover{
+    transition: all 1s ease;
+    filter: sepia(0%);
+}
+
+.is3{
+    background-image: url("/imagenes/technical_capabilites.jpeg");
+    filter: sepia(80%);
+    border-radius: 15px;
+}
+.is3:hover{
+    transition: all 1s ease;
+    filter: sepia(0%);
+}
+
+table:hover{
+    transition: all 1s ease;
+    filter: sepia(0%);
+    transform:scale(1.05);
+}
+
+.customers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cliente_tarjeta{
+    background: rgb(255, 255, 255);
+    width: 400px;
+    margin: 15px;
+    border-radius: 10px;
+    border: rgb(0, 0, 0) solid;
+    border-width: 0.2em;
+}
+
+.cliente-img{
+    height: 400px;
+    margin-bottom: 10px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    border-bottom: rgb(0, 0, 0) solid;
+    border-width: 0.5em;
+}
+
+.cliente_tarjeta a{
+    background-color: rgb(30, 154, 226);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align:center;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+.cli-1{
+    background-image: url("/imagenes/Clientes/Conae.png");
+}
+
+.cli-2{
+    background-image: url("/imagenes/Clientes/VENG.png");
+}
+
+.cli-3{
+    background-image: url("/imagenes/Clientes/ESA.png");
+}
+
+.cli-4{
+    background-image: url("/imagenes/Clientes/CNES.png");
+}
+
+.cli-5{
+    background-image: url("/imagenes/Clientes/JAXA.png");
+}
+
+.cli-6{
+    background-image: url("/imagenes/Clientes/NASA.png");
+}
+
+.cli-7{
+    background-image: url("/imagenes/Clientes/Roscosmos.png");
+}
+
+.cli-8{
+    background-image: url("/imagenes/Clientes/SPACEx.png");
+}
+
+.cliente_tarjeta h2{
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.cliente_tarjeta:hover{
+    filter: saturate(150%);
+    transform:scale(1.05);
+    transition: all 1s ease;
+}
+
+footer{
+    border-color: rgb(30, 154, 226);
+    border-style:solid none solid none;
+    font-size: large;
+    text-size-adjust: auto;
+}
+
+h1:hover{
+    transform: scale(0.95);
+    transition: all 3s ease;
+}
+
+
+.inos{
+    background-image: url("/imagenes/team.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    filter: sepia(80%);
+}
+
+.inos:hover{
+    filter: sepia(0%);
+}
+
+.locacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    max-width: 1700px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    border:#FFF solid;
+}
+
+.locacion h2{
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#mapa{
+    filter: invert(90%);
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#estamos:hover{
+    background-color: rgb(30, 154, 226);
+    transition: all 1s ease;
 }
