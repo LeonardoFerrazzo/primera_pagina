@@ -43,7 +43,7 @@
 
             <div class="barra">
                 <nav>
-                    <!--Barra de navegación dentro del header-->
+                    <!--BARRA DE NAVEGACIÓN: POR REHACER PAR MEJORAR RESPONSIVENESS-->
                     <span><a href="#head">Home</a></span>
                     <span><a href="#lanz">Servicios</a></span>
                     <span><a href="#exito">Misiones</a></span>
@@ -74,9 +74,10 @@
                     Deserunt vitae magni exercitationem alias beatae ex architecto harum maiores nostrum in! Dolor
                     dignissimos qui repellendus id vel assumenda similique rerum tempore exercitationem omnis laboriosam
                     excepturi cupiditate</p>
-                <a href=""">Más Información</a>
+                <a href="" id="btn__modal">Próximamente...</a>
 
             </div>
+
 
 
             <div class="tarjeta">
@@ -88,7 +89,7 @@
                     Dicta reprehenderit nobis dolor hic enim excepturi perferendis voluptatibus veniam dolores
                     reiciendis. Tenetur quod, nihil quas amet beatae quia dolor voluptates deserunt iste in repellendus
                     similique, molestias harum, fugit doloribus!</p>
-                <a href="">Más Información</a>
+                <a href="" id="btn__modal">Próximamente...</a>
 
             </div>
 
@@ -101,7 +102,7 @@
                     Soluta accusamus vero mollitia consectetur enim cumque sed aspernatur ullam unde voluptatem nostrum
                     quis non delectus vitae, dignissimos, commodi assumenda minus quaerat sequi culpa. Doloremque illo
                     repellendus tempor</p>
-                <a href="">Más Información</a>
+                <a href="" id="btn__modal">Próximamente...</a>
 
             </div>
 
@@ -114,7 +115,7 @@
                     Dolor ducimus obcaecati nemo veritatis laboriosam quia quam doloremque temporibus. Eaque possimus
                     numquam unde! Aperiam, architecto iste dolore sequi quam corrupti a, adipisci, quas deleniti non
                     dolor accusamus explicabo corporis.</p>
-                <a href="">Más Información</a>
+                <a href="" id="btn__modal"">Próximamente...</a>
 
             </div>
         </section>
@@ -326,6 +327,94 @@
         <div class="s1" id="contacto">
             <p>Contacto</p>
         </div>
+
+        <!-- Grupo Nombre -->
+        <form action="" class="formulario" id="formulario">
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__lable">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="Ingrese su nombre">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre solo puede contener letras, con un máximo de 30 caracteres
+                </p>
+            </div>
+
+            <!-- Grupo Apellido -->
+            <div class="formulario__grupo" id="grupo__apellido">
+                <label for="apellido" class="formulario__lable">Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                        placeholder="Ingrese su apellido">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El apellido solo puede contener letras, con un máximo de 30
+                    caracteres</p>
+            </div>
+
+            <!-- Grupo Empresa -->
+            <div class="formulario__grupo" id="grupo__empresa">
+                <label for="empresa" class="formulario__lable">Empresa</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="empresa" id="empresa"
+                        placeholder="Ingrese su Empresa">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Máximo de 30 caracteres</p>
+            </div>
+
+            <!-- Grupo Mail -->
+            <div class="formulario__grupo" id="grupo__mail">
+                <label for="mail" class="formulario__lable">Mail</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="mail" id="mail" placeholder="Ingrese su e-mail">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">No es un mail valido</p>
+            </div>
+
+            <!-- Grupo Telefono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__lable">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="Ingrese su teléfono">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono puede contener de 7 a 25 numeros</p>
+            </div>
+
+            <!-- Grupo Consulta -->
+            <div class="formulario__grupo" id="grupo__consulta">
+                <label for="consulta" class="formulario__lable">Consulta</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="consulta" id="consulta"
+                        placeholder="Ingrese su consulta">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Maximo de 300 caracteres</p>
+            </div>
+
+            <!-- Grupo T&C -->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto Términos y Condiciones
+                </label>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b> Error: </b> Los campos marcados son erroneos </p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Consulta enviada con éxito</p>
+            </div>
+
+        </form>
+
         <br><br>
     </main>
 
@@ -345,10 +434,26 @@
         <br>
     </footer>
 
+<!-- MODAL, TRABAJO EN PROGRESO -->
+<div id="modal_1" class="modal">
+    <div class="modal_contenido">
+        <span class="close">&times;</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni ab cupiditate porro,
+            perferendis blanditiis, aut possimus facere harum quam animi nobis tenetur error voluptatem
+            asperiores non numquam dicta sapiente.
+            Minus qui magni dolor libero reiciendis cupiditate nesciunt excepturi repellendus accusamus
+            perspiciatis? Provident quasi minus hic omnis explicabo, aperiam recusandae consequatur!
+            Quidem eius ipsam aut voluptate ut necessitatibus, iure nulla?
+            Dolores unde illo odit, impedit assumenda officiis deleniti dolorum, accusamus, sint quod
+            cum sunt veritatis numquam ducimus. Iure voluptas eligendi modi officia magni cupiditate
+            reprehenderit, voluptatibus id, libero recusandae molestiae?
+            Ipsum voluptate doloremque laboriosam dicta repellat, rerum, qui molestias harum ratione
+            quidem, beatae laborum voluptatum ex minus officiis quam impedit magnam voluptas earum
+            asperiores facere. Eum, obcaecati! Ea, quasi sunt!</p>
+    </div>
+</div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
-
-<!--CAMBIAR ESTILO DE LAS DEMAS PÁGINAS-->
-<!--ARREGLAR FOOTER E IMAGENES-->
-<!--MEJORAR CAPACIDAD RESPONSIVE-->
